@@ -1,0 +1,15 @@
+.menu {
+    min-width: 540px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    &__item {
+        a {
+            text-transform: uppercase;
+            font-size: 13px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    }
+}

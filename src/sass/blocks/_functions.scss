@@ -1,0 +1,38 @@
+.functions {
+    padding: 79px 0 81px 0;
+    &__wrapper {
+        display: grid;
+        grid-template: 255px 226px 255px / repeat(3, 360px);
+        grid-auto-rows: 255px;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+    &__item {
+        position: relative;
+    }
+    &__img {
+        width: 100%;
+        height: 255px;
+        position: absolute;
+        object-fit: cover;
+        z-index: -1;
+    }
+    &__title {
+        max-width: 360px;
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 1.44;
+        text-align: center;
+        margin-top: 176px;
+        color: #393939;
+    }
+    &__divider {
+        justify-self: center;
+        align-self: center;
+        grid-column: 1 / 4;
+        &-img {
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}

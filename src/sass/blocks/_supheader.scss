@@ -1,0 +1,29 @@
+.supheader {
+    padding-bottom: 19px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    &__title, &__address {
+        font-size: 12px;
+        font-weight: 300;
+        color: #242424;
+        margin: 0;
+    }
+    &__title {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 14px;
+    }
+    &__item {
+        margin-top: 19px;
+        display: flex;
+        align-items: flex-start;
+    }
+    &__icon {
+        height: 21px;
+        margin-right: 11px;
+    }
+}
