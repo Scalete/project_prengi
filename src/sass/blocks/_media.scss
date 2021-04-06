@@ -93,6 +93,11 @@
             padding-right: 8px;
         }
     }
+    .advantages {
+        &__wrapper {
+            grid-template-columns: repeat(auto-fit,minmax(auto,570px));
+        }
+    }
 }
 
 @media (max-width: 576px) {
@@ -214,6 +219,15 @@
         &__link {
             border-right: none;
             border-bottom: 1px solid rgba(211,211,211, .4);
+        }
+    }
+    .advantages {
+        padding: 55px 0;
+        &__title {
+            font-size: 22px;
+        }
+        &__descr {
+            font-size: 18px;
         }
     }
 }
