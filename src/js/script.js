@@ -18,6 +18,21 @@ $(document).ready(function () {
         }, ]
     });
 
+    $('.solutions__slider').slick({
+        infinite: true,
+        speed: 1000,
+        cssEase: 'linear',
+        prevArrow: '<button type="button" class="slick-prev"><img src="../icons/arrows/left.png"></button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="../icons/arrows/right.png"></button>',
+        responsive: [{
+            breakpoint: 992,
+            settings: {
+                dots: true,
+                arrows: false,
+            }
+        }, ]
+    });
+
     window.addEventListener('DOMContentLoaded', () => {
         const menu = document.querySelector('.menu'),
         menuItem = document.querySelectorAll('.menu__item'),

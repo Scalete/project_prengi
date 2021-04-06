@@ -1,0 +1,67 @@
+.solutions {
+    padding: 79px 0 61px 0;
+    background: url("../img/bg/girl.jpg") center (center/cover) no-repeat;
+    min-height: 889px;
+    &__title {
+        max-width: 618px;
+        text-align: center;
+        margin: 0 auto;
+        font-size: 30px;
+        font-weight: 900;
+        line-height: 1.2;
+        margin-bottom: 25px;
+    }
+    &__links {
+        max-width: 843px;
+        padding: 7px 33px 9px 33px;
+        border-radius: 4px;
+        border: solid 1px #ffffff;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 35px;
+    }
+    &__link {
+        font-size: 14px;
+        font-weight: normal;
+        line-height: 1.86;
+        color: #ffffff;
+        transition: all 0.6s;
+        border-right: 1px solid rgba(211,211,211, .4);
+        padding: 18px 25px 16px 0;
+        &:hover {
+            color: $main-color;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        &:last-child {
+            border-right: none;
+            padding-right: 0;
+        }
+    }
+    &__slider {
+        img {
+            width: 100%;
+        }
+        .slick-slide:active, .slick-slide:focus {
+            outline: none;
+        }
+        .slick-next, .slick-prev{
+            background-color: transparent;
+            border: none;
+            outline: none;
+            position: absolute;
+            right: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        .slick-prev {
+            left: 29px;
+        }
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+    }
+}
