@@ -17,6 +17,19 @@
             grid-column: 1 / 3;
         } 
     }
+    .data {
+        &__item {
+            max-width: 430px;
+            padding-right: 0;
+        }
+        &__subtitle, &__descr {
+            text-align: center;
+        }
+        .block-left, .block-right {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
 }
 
 @media (max-width: 992px) {
@@ -66,6 +79,14 @@
             outline: none;
         }
     }
+    .data {
+        &__item {
+            max-width: 350px;
+        }
+        &__subtitle {
+            font-size: 25px;
+        }
+    }
 }
 
 @media (max-width: 768px) {
@@ -96,6 +117,47 @@
     .advantages {
         &__wrapper {
             grid-template-columns: repeat(auto-fit,minmax(auto,570px));
+        }
+    }
+    .data {
+        min-height: 1116px;
+        &__img-block {
+            width: 100%;
+            height: 100%;
+        }
+        &__background-left, &__background-right {
+            width: 100%;
+            height: 580px;
+        }
+        &__background-right {
+            bottom: 0;
+        }
+        &__wrapper {
+            height: 683px;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        &__item {
+            max-width: 514px;
+        }
+
+        .block-left {
+            left: 0;
+            transform: unset;
+        }
+        .block-right {
+            right: 0;
+            transform: unset;
+            left: unset;
+        }
+        
+        .text-left {
+            text-align: left;
+        }
+        
+        .text-right {
+            text-align: right
         }
     }
 }
@@ -228,6 +290,29 @@
         }
         &__descr {
             font-size: 18px;
+        }
+    }
+    .data {
+        &__title {
+            width: 309px;
+            font-size: 22px;
+        }
+        &__subtitle, &__descr {
+            text-align: center;
+        }
+        &__subtitle {
+            font-size: 22px;
+        }
+        .block-left, .block-right {
+            left: 50%;
+            transform: translateX(-50%);
+        } 
+        .text-left {
+            text-align: center;
+        }
+        
+        .text-right {
+            text-align: center;
         }
     }
 }

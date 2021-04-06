@@ -20,6 +20,22 @@
     font-weight: bold
 }
 
+.block-left {
+    left: 0;
+}
+
+.block-right {
+    right: 0;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right
+}
+
 @import 'blocks/supheader';
 @import 'blocks/header';
 @import 'blocks/menu';
@@ -29,5 +45,6 @@
 @import 'blocks/functions';
 @import 'blocks/solutions';
 @import 'blocks/advantages';
+@import 'blocks/data';
 
 @import 'blocks/media';
